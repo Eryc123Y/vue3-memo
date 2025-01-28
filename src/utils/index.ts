@@ -51,3 +51,15 @@ export const localSetItem = (key: string, value: any): void => {
 export const geneId = (): number => {
   return Math.floor(Math.random() * 939874);
 };
+
+/**
+ * Simulate a http request
+ */
+export const ImitateHttp = (
+  fun: (s: Function, f: Function) => void,
+  timer = 1000
+) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => fun(resolve, reject), timer);
+  });
+}

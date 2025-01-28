@@ -10,6 +10,10 @@ const form = ref({
 })
 
 import { ElMessage } from "element-plus";
+import { useRouter } from "vue-router";
+import {userStore} from "@/stores/user";
+const store = userStore();
+const router = useRouter();
 
 /**
  * Interaction after submitting the form
