@@ -41,4 +41,4 @@ const userStore = defineStore("user", {
   },
 });
 
-export { default as userStore } from "@/stores/user/index.ts";
+export { userStore };
